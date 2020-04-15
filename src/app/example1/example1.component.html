@@ -1,0 +1,9 @@
+<h2>{{ title }}</h2>
+<hr />
+
+<img src="{{ imgURL }}" alt="" />
+<img [src]="imgURL" alt="" />
+
+<input type="text" [(ngModel)]="something" (input)="greet($event)" />
+<!-- model chane - different event -->
+<input type="text" [(ngModel)]="something" (ngModelChange)="greet($event)" />
